@@ -1,0 +1,45 @@
+:root {
+    --textColor1: #555555;
+    --primaryColor1: #0D3B66;
+    --primaryColor2: #F4D35E;
+    --secondaryColor: #FAF0CA;
+}
+
+p {
+    font-size: 14pt;
+}
+
+a {
+    color: #416788;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #6891B6;
+}
+
+body {
+    font-family: 'Arial';
+    color: var(--textColor1);
+    overflow-x: hidden !important;
+}
+
+.bg {
+    fill: var(--secondaryColor);
+}
+
+.bar1 {
+    fill: var(--primaryColor1);
+}
+
+.bar1:hover {
+    fill: var(--primaryColor2);
+}
+
+.bar2 {
+    fill: var(--primaryColor2);
+}
+
+.bar2:hover {
+    fill: var(--primaryColor1);
+}
