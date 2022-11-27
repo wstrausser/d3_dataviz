@@ -1,13 +1,13 @@
 // .createElementNS('http://www.w3.org/2000/svg')
 
 function main() {
-    const width = 500;
-    const height = 500;
-    const xpad = width/6;
-    const ypad = height/6;
+    const width = 900;
+    const height = 600;
+    const xpad = 150;
+    const ypad = 150;
 
     const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-    svg.setAttribute('id', 'svg1')
+    svg.setAttribute('id', 'svg2')
     svg.setAttribute("width", width);
     svg.setAttribute("height", height);
     document.body.appendChild(svg);
@@ -19,7 +19,7 @@ function main() {
     svg.appendChild(bg);
 
     const vmask = document.createElementNS('http://www.w3.org/2000/svg', 'mask');
-    vmask.setAttribute('id', 'vmask');
+    vmask.setAttribute('id', 'vmask2');
     svg.appendChild(vmask);
 
     const vmaskBg = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
@@ -39,7 +39,7 @@ function main() {
     vmaskCircle.setAttribute('fill', 'black');
     vmask.appendChild(vmaskCircle);
 
-    const vbars = 25
+    const vbars = 101
     const barThickness = (width-(xpad*2))/((vbars*2)-1);
     for (let i = 0; i < vbars; i++) {
         const vbar = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
@@ -53,12 +53,12 @@ function main() {
         vbar.setAttribute('y', ypad);
         vbar.setAttribute("width", barThickness);
         vbar.setAttribute("height", height-(ypad*2));
-        vbar.setAttribute("mask", "url(#vmask)");
+        vbar.setAttribute("mask", "url(#vmask2)");
         svg.appendChild(vbar);
     };
 
     const hmask = document.createElementNS('http://www.w3.org/2000/svg', 'mask');
-    hmask.setAttribute('id', 'hmask');
+    hmask.setAttribute('id', 'hmask2');
     svg.appendChild(hmask);
 
     const hmaskBg = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
@@ -93,7 +93,7 @@ function main() {
         else {
             hbar.setAttribute("class", "bar2")
         };
-        hbar.setAttribute("mask", "url(#hmask)");
+        hbar.setAttribute("mask", "url(#hmask2)");
         svg.appendChild(hbar);
     };
 };
