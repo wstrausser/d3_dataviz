@@ -37,6 +37,13 @@ body {
     text-align: center;
 }
 
+.footer {
+    max-width: var(--contentMaxWidth);
+    min-width: var(--contentMinWidth);
+    margin: auto;
+    text-align: left;
+}
+
 .content {
     max-width: var(--contentMaxWidth);
     min-width: var(--contentMinWidth);
