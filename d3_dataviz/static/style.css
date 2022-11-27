@@ -25,7 +25,7 @@ svg {
 }
 
 body {
-    font-family: 'Arial';
+    font-family: 'Roboto';
     color: var(--textColor1);
     overflow-x: hidden !important;
 }
