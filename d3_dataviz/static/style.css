@@ -22,6 +22,8 @@ body {
     font-family: 'Arial';
     color: var(--textColor1);
     overflow-x: hidden !important;
+    margin: auto;
+    width: 900px;
 }
 
 .bg {

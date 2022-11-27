@@ -3,8 +3,8 @@
 function main() {
     const width = 900;
     const height = 600;
-    const xpad = 150;
-    const ypad = 150;
+    const xpad = width/6;
+    const ypad = width/6;
 
     const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
     svg.setAttribute('id', 'svg2')
