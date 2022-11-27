@@ -8,16 +8,18 @@
     </head>
     <body>
         {%include 'banner.html' %}
-        <md-block>
-            # Unit 1 - Sol LeWitt in Vanilla JS
-            My take on the materials presented in this lesson. [Timestamped link to video.](https://www.youtube.com/watch?v=xkBheRZTkaw&t=8186s)
-        </md-block>
-        <script src={{ url_for('static', filename='unit1/unit1.1.js') }}></script>
-        <br/>
-        <br/>
-        <script src={{ url_for('static', filename='unit1/unit1.2.js') }}></script>
-        <br/>
-        <br/>
-        <script src={{ url_for('static', filename='unit1/unit1.3.js') }}></script>
+        <div class="content">
+            <md-block>
+                # Unit 1 - Sol LeWitt in Vanilla JS
+                My take on the materials presented in this lesson. [Timestamped link to video.](https://www.youtube.com/watch?v=xkBheRZTkaw&t=8186s)
+            </md-block>
+            <script src={{ url_for('static', filename='unit1/unit1.1.js') }}></script>
+            <br />
+            <br />
+            <script src={{ url_for('static', filename='unit1/unit1.2.js') }}></script>
+            <br />
+            <br />
+            <script src={{ url_for('static', filename='unit1/unit1.3.js') }}></script>
+        </div>
     </body>
 </html>

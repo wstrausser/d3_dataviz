@@ -1,8 +1,8 @@
 // .createElementNS('http://www.w3.org/2000/svg')
 
 function main() {
-    const width = 500;
-    const height = 500;
+    const width = document.querySelector('.content').offsetWidth;
+    const height = width;
     const xpad = width/6;
     const ypad = height/6;
 
@@ -10,6 +10,8 @@ function main() {
     svg.setAttribute('id', 'svg1')
     svg.setAttribute("width", width);
     svg.setAttribute("height", height);
+    svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
+    svg.setAttribute("preserveAspectRatio", "xMidYMid meet");
     document.body.appendChild(svg);
 
     const bg = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
