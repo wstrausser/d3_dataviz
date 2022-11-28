@@ -39,7 +39,7 @@ function main() {
     vmaskCircle.setAttribute('fill', 'black');
     vmask.appendChild(vmaskCircle);
 
-    const vbars = 25
+    const vbars = 25;
     const barThickness = (width-(xpad*2))/((vbars*2)-1);
     for (let i = 0; i < vbars; i++) {
         const vbar = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
@@ -79,8 +79,11 @@ function main() {
     const hbars = vbars;
     for (let i = 0; i < hbars; i++) {
         if (((i*(barThickness*2))+ypad) > (height-ypad)) {
+            // Prevents bars from being drawn outside of svg margins set by xpad and ypad.
+            // Only has effect on non-square images, and has no visible impact anyway as mask
+            // hides anything this low.
             break
-        }
+        };
 
         const hbar = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
         hbar.setAttribute('y', (i*(barThickness*2))+ypad);
@@ -98,4 +101,4 @@ function main() {
     };
 };
 
-main()
+main();
