@@ -30,24 +30,24 @@ body {
     overflow-x: hidden !important;
 }
 
-.banner {
+#banner {
     max-width: 1100px;
     min-width: var(--contentMinWidth);
     margin: auto;
     text-align: center;
 }
 
-.footer {
+#content {
+    max-width: var(--contentMaxWidth);
+    min-width: var(--contentMinWidth);
+    margin: auto;
+}
+
+#footer {
     max-width: var(--contentMaxWidth);
     min-width: var(--contentMinWidth);
     margin: auto;
     text-align: left;
-}
-
-.content {
-    max-width: var(--contentMaxWidth);
-    min-width: var(--contentMinWidth);
-    margin: auto;
 }
 
 .bg {
