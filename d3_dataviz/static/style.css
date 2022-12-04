@@ -69,3 +69,11 @@ body {
 .bar2:hover {
     fill: var(--primaryColor1);
 }
+
+.color1 {
+    fill: var(--primaryColor1);
+}
+
+.color2 {
+    fill: var(--primaryColor2);
+}
