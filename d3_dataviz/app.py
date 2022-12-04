@@ -14,5 +14,9 @@ def unit1():
 def unit2():
     return render_template("unit2.html")
 
+@app.route("/experiments")
+def unit3():
+    return render_template("experiments.html")
+
 if __name__== "__main__":
     app.run(debug=True)
